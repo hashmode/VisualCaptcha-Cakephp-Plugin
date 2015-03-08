@@ -7,6 +7,7 @@ Cakephp 2.x Plugin for VisualCaptcha https://github.com/emotionLoop/visualCaptch
 2. Clone the php package `https://github.com/emotionLoop/visualCaptcha-packagist` into `app/Vendor` directory and rename it to `visual_captcha`
 3. Add the component in the controller like `public $components = array('VisualCaptcha.VisualCaptcha');` and load from bootstrap: `CakePlugin::load('VisualCaptcha');`.
 4. Js options can be taken from here, `https://github.com/emotionLoop/visualCaptcha-frontend-jquery`. 
+
 E.g. lets say we want to set up the actions in UsersController. In View add this:
 
 ```
