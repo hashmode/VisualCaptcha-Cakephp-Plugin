@@ -49,6 +49,6 @@ In users controller we should have these actions
 
 For checking the validity just use `$this->VisualCaptcha->check()`. It will automatically check the `$this->request->data` for the captcha's key => value pair.
 
-## LICENSE
+## License
 
 MIT
