@@ -3,8 +3,6 @@ use visualCaptcha\Captcha;
 use visualCaptcha\Session;
 App::uses('Component', 'Controller');
 
-// App::uses('elFinderConnector', 'TinymceElfinder.Lib', array('file' => 'TinymceElfinder/elFinderConnector.php'));
-
 App::import('Vendor', 'Captcha', array(
 	'file' => 'visual_captcha' . DS . 'src' . DS . 'visualCaptcha' . DS . 'Captcha.php' 
 ));
