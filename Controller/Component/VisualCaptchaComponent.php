@@ -47,13 +47,15 @@ class VisualCaptchaComponent extends Component {
 	public function image($index) {
 		$session = new Session();
 		$captcha = new Captcha($session);
-		return $captcha->streamImage(array(), $index, 0);
+		$blankArray = array();
+		return $captcha->streamImage($blankArray, $index, 0);
 	}
 
 	public function audio() {
 		$session = new Session();
 		$captcha = new Captcha($session);
-		return $captcha->streamAudio(array(), 'mp3');
+		$blankArray = array();
+		return $captcha->streamAudio($blankArray, 'mp3');
 	}
 	
 	public function check() {
