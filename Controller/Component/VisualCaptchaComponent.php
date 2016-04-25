@@ -17,12 +17,11 @@ class VisualCaptchaComponent extends Component {
 
 	function initialize(Controller $controller) {
 		$this->controller = $controller;
+		$this->imageField = $this->controller->Session->read('visualcaptcha.frontendData.imageFieldName');
+		$this->audioField = $this->controller->Session->read('visualcaptcha.frontendData.audioFieldName');
 
 		// if Security component is used
 		if (array_key_exists('Security', $this->controller->components)) {
-			$this->imageField = $this->controller->Session->read('visualcaptcha.frontendData.imageFieldName');
-			$this->audioField = $this->controller->Session->read('visualcaptcha.frontendData.audioFieldName');
-			
 			if ($this->imageField && $this->audioField) {
 				$this->controller->Security->unlockedFields = array(
 					$this->imageField,
